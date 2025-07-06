@@ -13,7 +13,7 @@ function StarRating({
   maxRating = 5,
   color = "#fcc419",
   size = 48,
-  onSetRating,
+  onSetRating = function () {},
 }) {
   const [rating, setRating] = useState(0);
   const [tempRating, setTempRating] = useState(0);
